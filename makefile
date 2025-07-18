@@ -30,5 +30,5 @@ routeClear: ## LIMPA AS ROTAS
 view: ## LIMPA AS VIEWS
 	docker exec -it myEnterprise-nginx php artisan view:clear
 
-install:
+install: ## INSTALA AS DEPENDÊNCIAS
 	docker exec -it myEnterprise-nginx composer i
