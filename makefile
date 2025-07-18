@@ -15,19 +15,19 @@ fresh:
 rollback:
 	docker exec -it myEnterprise-nginx php artisan migrate:rollback
 
-keys:
+keys: ## CRIA AS CHAVES DA APLICAÇÃO
 	docker exec -it myEnterprise-nginx php artisan key:generate
 
-config:
+config: ## RESETA AS CONFIGURAÇÕES
 	docker exec -it myEnterprise-nginx php artisan config:clear
 
-route:
+route: ## LISTA AS ROTAS
 	docker exec -it myEnterprise-nginx php artisan route:list
 
-routeClear:
+routeClear: ## LIMPA AS ROTAS
 	docker exec -it myEnterprise-nginx php artisan route:clear
 
-view:
+view: ## LIMPA AS VIEWS
 	docker exec -it myEnterprise-nginx php artisan view:clear
 
 install:
